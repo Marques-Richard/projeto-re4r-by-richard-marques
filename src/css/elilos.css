@@ -1,0 +1,157 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-image: url('../imagens/re4wallpaper02.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* a altura minima da janela de navegação minima */
+}
+
+
+
+.cabecalho {
+  text-align: center;          /* para alinhar ao centro */
+  padding: 60px 0;          /* espaço entre as bordas */
+}
+
+.cabecalho h1 {
+  background-color: #b2b2b4;
+  font-size: 45px;        /* tamanho da font */
+  letter-spacing: 10px;       /* espaço entre as letras */
+  text-transform: uppercase;        /* para deixar o texto maiusculo */
+}
+
+.personagens-slider {
+  display: flex;          /* foma de visualizar o emento na tela, */ 
+  justify-content: center;        /* alinhar o elemento horizontalmente */
+  align-items: center;         /* alinhar o elemento verticalmente */
+  gap: 15px;         /* espaço das setas */
+}
+
+.lista-personagens {
+  width: 430px;         /* largura do elemento */
+  height: 620px;        /* altura do elemento */
+  position: relative;         /* para utilizar o position: absolute */
+  
+}
+
+.btn-seta {
+  background-color: #d65e2b;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;        /* arendondar as bordas */
+  border: 0;          /* tamanha da borda */
+  cursor: pointer;          /* tipo de cursor do mause */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: backgrand-color 0.2s ease-in-out;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.btn-seta.btn-voltar {
+  transform: rotateY(180deg); /* para rodar um elemento */
+}
+
+.btn-seta:hover {
+  background-color: #519c69;
+}
+
+.cartao {
+  opacity: 0;
+  height: 100%;
+  position: absolute;         /* para este funcionar, colocar position:relative; no elemento pai */
+  padding: 12px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 20px;
+  transition: opacity 0.3s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartao.selecionado {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cartao .imagem-personagem {
+  width: 100%;
+  max-height: 400px;
+}
+
+.cartao .nome {
+  background-color: #333333;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cartao .descricao {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cartao .descricao .titulo {
+  background-color: #333333;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 12px;
+}
+
+.cartao .descricao .texto {
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 110px;
+  overflow-y: auto;
+}
+
+.cartao.fundo-1 {
+  background: url('../imagens/maleta.jpg') no-repeat;
+}
+
+.cartao.fundo-2 {
+  background: url('../imagens/fundo-2.jpg') no-repeat;
+}
+
+.cartao.fundo-3 {
+  background: url('../imagens/fundo-3.jpg') no-repeat;
+}
+
+.cartao.fundo-4 {
+  background: url('../imagens/fundo-4.jpg') no-repeat;
+}
+
+.cartao.fundo-5 {
+  background: url('../imagens/fundo-5-sadelaer.jpg') no-repeat;
+}
+
+.cartao.fundo-6 {
+  background: url('../imagens/fundo-6.jpg') no-repeat;
+}
+
+.cartao.fundo-7 {
+  background: url('../imagens/fundo-7.jpg') no-repeat;
+}
+
+.cartao.fundo-8 {
+  background: url('../imagens/fundo-1.jpg') no-repeat;
+}
+
+.cartao.fundo-9 {
+  background: url('../imagens/fundo-9.jpg') no-repeat;
+}
+
+.cartao.fundo-10 {
+  background: url('../imagens/fundo-10.jpg') no-repeat;
+}
+
+.cartao.fundo-11 {
+  background: url('../imagens/fundo-11.jpg') no-repeat;
+}
