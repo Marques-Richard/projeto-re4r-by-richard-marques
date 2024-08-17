@@ -14,10 +14,23 @@ body {
 }
 
 .cabecalho h1 {
-  background-color: #b2b2b4;
-  font-size: 45px;        /* tamanho da font */
-  letter-spacing: 10px;       /* espaço entre as letras */
-  text-transform: uppercase;        /* para deixar o texto maiusculo */
+  color: white;
+  font-size: 90px;        /* tamanho da fonte */
+  letter-spacing: 10px;   /* espaço entre as letras */
+  text-transform: uppercase; /* para deixar o texto maiúsculo */
+  font-family: "resident_evil_4_remake_font";
+
+  color: #ffffff;                /* Cor das letras, opcional (ajuste conforme necessário) */
+  text-shadow: 2px 2px 5px black; /* Sombra preta nas letras */
+}
+
+.letra-vermelha {
+  color: red;
+}
+
+@font-face{
+  font-family: "resident_evil_4_remake_font";
+  src: url(../css/fontes/resident_evil_4_remake_font.ttf);
 }
 
 .personagens-slider {
@@ -35,9 +48,9 @@ body {
 }
 
 .btn-seta {
-  background-color: #d65e2b;
-  width: 70px;
-  height: 70px;
+  background-color: rgba(245, 53, 53, 0.534);
+  width: 90px;
+  height: 90px;
   border-radius: 50px;        /* arendondar as bordas */
   border: 0;          /* tamanha da borda */
   cursor: pointer;          /* tipo de cursor do mause */
@@ -59,7 +72,7 @@ body {
 .cartao {
   opacity: 0;
   height: 100%;
-  position: absolute;         /* para este funcionar, colocar position:relative; no elemento pai */
+  position: absolute; /* para este funcionar, colocar position:relative; no elemento pai */
   padding: 12px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-radius: 20px;
@@ -77,11 +90,11 @@ body {
 
 .cartao .imagem-personagem {
   width: 100%;
-  max-height: 400px;
+  max-height: 380px;
 }
 
 .cartao .nome {
-  background-color: #333333;
+  background-color: #333333bd;
   padding: 8px 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -141,7 +154,7 @@ body {
 }
 
 .cartao.fundo-8 {
-  background: url('../imagens/fundo-1.jpg') no-repeat;
+  background: url('../imagens/fundo-08.jpg') no-repeat;
 }
 
 .cartao.fundo-9 {
